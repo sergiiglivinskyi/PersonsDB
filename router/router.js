@@ -1,9 +1,11 @@
 const low = require('lowdb');
+
+const fileAsync = require('lowdb/lib/storages/file-async');
+
 const usersdb = low('db/users.json', { storage: fileAsync});
 const marksdb = low('db/marks.json', { storage: fileAsync});
 const groupsdb = low('db/groups.json', { storage: fileAsync});
 
-const fileAsync = require('lowdb/lib/storages/file-async');
 
 module.exports = function(app) {
 
