@@ -5,6 +5,38 @@ const usersdb = low();
 const marksdb = low();
 const groupsdb = low();
 
+usersdb.defaults({users:{}}).write();
+usersdb.get('users').push({"id": 1498399271406,
+      "name": "Editor",
+      "secondname": "Editenko",
+      "age": "22",
+      "gender": "male",
+      "groupid": 1,
+      "login": "editor",
+      "pwd": "123",
+      "role": "editor",
+      "created": 1498399271406,
+      "active": true}).write();
+
+
+groupsdb.defaults({groups:{}}).write();
+groupsdb.get('groups').push({"id": 1,
+      "name": "group 1"}).write();
+
+marksdb.defaults({marks:{}}).write();
+marksdb.get('marks').push({"id": 1,
+      "userid": 1498399271406,
+      "hw1": {
+        "created": 1497807271097,
+        "mark": 7
+      },
+      "hw2": {
+        "created": 1497807271097,
+        "mark": 6
+      },
+      "cw": {
+        "created": 1497807271097,
+        "mark": 12}).write();
 
 module.exports = function(app) {
 
