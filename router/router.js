@@ -36,7 +36,7 @@ marksdb.get('marks').push({"id": 1,
       },
       "cw": {
         "created": 1497807271097,
-        "mark": 12}).write();
+        "mark": 12}}).write();
 
 module.exports = function(app) {
 
