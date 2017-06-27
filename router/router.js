@@ -1,10 +1,9 @@
 const low = require('lowdb');
 
-const fileAsync = require('lowdb/lib/storages/file-async');
 
-const usersdb = low('db/users.json', { storage: fileAsync});
-const marksdb = low('db/marks.json', { storage: fileAsync});
-const groupsdb = low('db/groups.json', { storage: fileAsync});
+const usersdb = low('db/users.json');
+const marksdb = low('db/marks.json');
+const groupsdb = low('db/groups.json');
 
 
 module.exports = function(app) {
