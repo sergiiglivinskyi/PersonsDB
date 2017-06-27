@@ -6,8 +6,7 @@ const session = require('express-session');
 const low = require('lowdb');
 const app = express();
 
-const port = process.env.PORT || 8080;
-const ip = process.env.IP || '127.0.0.1';
+app.set('port', (process.env.PORT || 5000));
 
 app.use(favicon(__dirname + '/public/images/favicon.ico'));
 app.set('views', __dirname + '/views');
@@ -35,6 +34,6 @@ app.use(session({
 
 require('./router/router')(app);
 
-app.listen(port, ip, () => {
-	console.log("Server: running");
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
 });
