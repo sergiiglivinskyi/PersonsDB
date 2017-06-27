@@ -1,9 +1,9 @@
 const low = require('lowdb');
 
 
-const usersdb = low('db/users.json');
-const marksdb = low('db/marks.json');
-const groupsdb = low('db/groups.json');
+const usersdb = low();
+const marksdb = low();
+const groupsdb = low();
 
 
 module.exports = function(app) {
@@ -31,10 +31,10 @@ module.exports = function(app) {
 			role: 'admin',
 			id: 1
 		},
-		user:{
-			name: 'Usercheg',
-			pwd: '54321',
-			role: 'user',
+		editor:{
+			name: 'Editorcheg',
+			pwd: '12345',
+			role: 'editor',
 			id: 2
 		}
 	};
