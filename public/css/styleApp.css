@@ -1,0 +1,246 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    background-color: #0B2F3A;
+}
+
+p {
+	position: relative;
+}
+
+h2 {
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
+}
+
+th {
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 4px 10px;
+	text-align: center;
+	border: 1px solid lightgrey;
+	color: lightgrey;
+}
+
+
+tbody tr:hover td{
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+table td{
+	border: 1px solid lightgrey;
+	padding: 1px 10px 2px 10px;
+	color: white;
+}
+
+#appWrapper {
+
+}
+
+#infoArea {
+	margin: 0 auto;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+#popupWrapper {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+#actionBand {
+	position: absolute;
+	left: 0;
+	/*top: 30%;*/
+	/*width: 100px;*/
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	border-top-right-radius: 4px;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+#addPerson {
+	color: lightgrey;
+}
+#addGroup {
+	color: lightgrey;
+}
+
+.tableWrapper{
+
+}
+
+.customfont{
+	font-family: 'fontlogin';
+}
+
+.inputicons{
+	position: absolute;
+	z-index: 1;
+	top: 12px;
+	left: 10px;
+	font-size: 1.2em;
+	color: grey;
+}
+
+.form-app {
+  margin: 20px 0 10px 40px;
+}
+
+input, select{
+	padding-left: 10px;
+	color: grey;
+	background-color: lightgrey;
+	margin-top: 5px;
+	margin-right: 4px;
+    border: none;
+}
+
+select {
+	height: 22px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    padding: 2px 16px 2px 2px;
+    vertical-align: top;
+	background-image:
+	    linear-gradient(45deg, transparent 50%, gray 50%),
+	    linear-gradient(135deg, gray 50%, transparent 50%),
+	    linear-gradient(to right, #ccc, #ccc);
+	  background-position:
+	    calc(100% - 5px) calc(1em - 14px),
+	    calc(100%) calc(1em - 14px),
+	    calc(100% - 2.5em) 1em;
+	  background-size:
+	    5px 5px,
+	    5px 5px,
+	    1px 1.5em;
+	  background-repeat: no-repeat;
+}
+select:focus {
+  background-image:
+    linear-gradient(45deg, royalblue 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, royalblue 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+	    calc(100%) calc(1em + 1px),
+	    calc(100% - 5px) calc(1em + 1px),
+	    calc(100% - 2.5em) 1em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+  border-color: royalblue;
+  outline: 0;
+}
+
+
+a {
+	padding-right: 10px;
+	padding-left: 6px;
+	text-decoration: none !important;
+}
+
+button {
+	background-color: rgba(255, 255, 255, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 3px;
+	margin-top: 1px;
+}
+
+div.button {
+	background-color: rgba(255, 255, 255, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
+	cursor: pointer;
+	padding: 2px 6px;
+	margin-bottom: 4px;
+}
+div.button:hover{
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+div.button:hover .customfont{
+	font-size: 2.2em;
+	transition: .2s;
+}
+
+.size16 {
+	font-size: 20px;
+}
+
+.logo{
+	margin-right: 10px;
+}
+
+
+/* Modal Content/Box */
+.modalContent {
+	position: relative;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 4px;
+    width: 300px; /* Could be more or less, depending on screen size */
+	background-color: grey;
+	border: 3px solid rgba(0,0,0,0.2);
+	border-top: 2px solid lightgrey;
+	border-left: 2px solid lightgrey;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.5s;
+    animation-name: animatetop;
+    animation-duration: 0.5s
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top: -50px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+@keyframes animatetop {
+    from {top: -50px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    margin-right: 4px;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.fontSize2 {
+	font-size: 2em;
+	margin-right: 4px;
+	vertical-align: sub;
+}
+
+
+/* Colors */
+.female {
+	color: #FA5882;
+	text-align: center;
+}
+.male {
+	color: #58ACFA;
+	text-align: center;
+}
+
+
+.tabName {
+	color: lightgrey;
+}
+/*Bootstipe override*/
+.nav {
+	padding-left: 150px;
+	margin-bottom: 20px;
+}
+.tab-content {
+	padding-left: 14%;
+}
